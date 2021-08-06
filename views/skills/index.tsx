@@ -5,8 +5,6 @@ import styled from "styled-components";
 import {ViewTitleFont} from '../../components';
 
 import git from "../../public/assets/skills/git.png";
-import github from "../../public/assets/skills/github.png";
-import gitlab from "../../public/assets/skills/gitlab.png";
 
 import temp from "../../public/assets/skills/temp.jpeg";
 import materialUi from "../../public/assets/skills/material-ui.png";
