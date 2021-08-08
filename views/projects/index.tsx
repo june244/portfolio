@@ -7,6 +7,12 @@ import Image from "next/image";
 import nba from "../../public/assets/projects/nba.png";
 import matcher from "../../public/assets/projects/matcher.png";
 import portfolio from "../../public/assets/projects/portfolio.png";
+import sysmaster1_0 from "../../public/assets/projects/sysmaster1_0.png"
+import sysmaster1_1 from "../../public/assets/projects/sysmaster1_1.png"
+import sysmaster1_2 from "../../public/assets/projects/sysmaster1_2.png"
+import sysmaster2_0 from "../../public/assets/projects/sysmaster2_0.png"
+import sysmaster2_1 from "../../public/assets/projects/sysmaster2_1.png"
+import sysmaster2_2 from "../../public/assets/projects/sysmaster2_2.png"
 
 
 import styled from "styled-components";
@@ -65,6 +71,11 @@ const Projects: React.FC = () => {
 	const animatedItem5 = useScrollFadeIn('center', 1.3, 0);
 	const animatedItem6 = useScrollFadeIn('center', 1.3, 0);
 
+	const animatedItem7 = useScrollFadeIn('center', 1.3, 0);
+	const animatedItem8 = useScrollFadeIn('center', 1.3, 0);
+	const animatedItem9 = useScrollFadeIn('center', 1.3, 0);
+	const animatedItem10 = useScrollFadeIn('center', 1.3, 0);
+
 	return (
 		<div
 			style={{ backgroundColor: "#3aafa9", width: "100%", height: "fit-content", paddingTop: 50, paddingBottom: 50 }}>
@@ -79,6 +90,62 @@ const Projects: React.FC = () => {
 				<Grid container >
 					<TextGrid item xs={12} md={4} {...animatedItem1} >
 						<ContentFont style={{ color: "#FEFFFF" }} xl>
+							SysMaster (with TOP)
+						</ContentFont>
+						<ContentFont style={{ color: "#17252a" }} lg>
+							TMAX Database tibero monitoring tool
+						</ContentFont>
+						<ContentFont style={{ color: "#17252a" }} md>
+							* 데이터베이스의 다양한 지표들을 시각화하여 제공<br/>
+							* TMAX에서 개발한 프론트엔드 개발 프레임워크인 top를 사용<br/>
+							* Frontend : 100%<br/>
+							* Publishing : 100%<br/>
+							* 기술 스택: top, javascript
+						</ContentFont>
+					</TextGrid>
+					<ImageGrid item xs={12} md={8} {...animatedItem2}>
+						<div style={{ position: "relative" }}>
+								<Overlay style={{  maxWidth: 678 }}>
+									<Image src={sysmaster1_0} alt={"sysmaster1_0"} />
+									<ContentFont style={{ position: "absolute", top: "30%", left: "25%", color: "black",borderBottomColor:'black',fontSize:"3vmin", margin:".5vmin" }}>SysMaster7DB with top</ContentFont>
+									<ContentFont style={{ position: "absolute", top: "45%", left: "40%", color: "black",border:"0px", fontSize:"2vmin" }}>2020.2.01 ~ </ContentFont>
+									<ContentFont style={{ position: "absolute", top: "60%", left: "40%", color: "black",border:"0px", fontSize:"2vmin" }}>No Link </ContentFont>
+								</Overlay>
+						</div>
+					</ImageGrid>
+					<Grid item xs={12}>
+						<hr style={{ marginTop: "3vh", marginBottom: "3vh" }} />
+					</Grid>
+					<TextGrid item xs={12} md={4} {...animatedItem3} >
+						<ContentFont style={{ color: "#FEFFFF" }} xl>
+							SysMaster (with react)
+						</ContentFont>
+						<ContentFont style={{ color: "#17252a" }} lg>
+							TMAX Database tibero monitoring tool
+						</ContentFont>
+						<ContentFont style={{ color: "#17252a" }} md>
+							* 데이터베이스의 다양한 지표들을 시각화하여 제공<br/>
+							* top.js가 deprecate되면서 자사의 제품들을 react로 변환하는 작업을 혼자서 진행<br/>
+							* Frontend : 100%<br/>
+							* Publishing : 100%<br/>
+							* 기술 스택: react, javascript, mobx
+						</ContentFont>
+					</TextGrid>
+					<ImageGrid item xs={12} md={8} {...animatedItem4}>
+						<div style={{ position: "relative" }}>
+							<Overlay style={{  maxWidth: 678 }}>
+								<Image src={sysmaster2_1} alt={"sysmaster2_1"} />
+								<ContentFont style={{ position: "absolute", top: "30%", left: "25%", color: "black",borderBottomColor:'black',fontSize:"3vmin", margin:".5vmin" }}>SysMaster7DB with react</ContentFont>
+								<ContentFont style={{ position: "absolute", top: "45%", left: "40%", color: "black",border:"0px", fontSize:"2vmin" }}>2020.11.01 ~ </ContentFont>
+								<ContentFont style={{ position: "absolute", top: "60%", left: "40%", color: "black",border:"0px", fontSize:"2vmin" }}>No Link </ContentFont>
+							</Overlay>
+						</div>
+					</ImageGrid>
+					<Grid item xs={12}>
+						<hr style={{ marginTop: "3vh", marginBottom: "3vh" }} />
+					</Grid>
+					<TextGrid item xs={12} md={4} {...animatedItem5} >
+						<ContentFont style={{ color: "#FEFFFF" }} xl>
 							NBA Analysis
 						</ContentFont>
 						<ContentFont style={{ color: "#17252a" }} lg>
@@ -92,7 +159,7 @@ const Projects: React.FC = () => {
 							* 기술 스택: react, javascript, sass, redux, redux-saga, d3.js, apex-chart
 						</ContentFont>
 					</TextGrid>
-					<ImageGrid item xs={12} md={8}  {...animatedItem4}>
+					<ImageGrid item xs={12} md={8}  {...animatedItem6}>
 						<div style={{ position: "relative" }}>
 							<a href="https://nba.teamcarelab.com" target="_blank" rel="noopener noreferrer">
 								<Overlay style={{  maxWidth: 678 }}>
@@ -107,7 +174,7 @@ const Projects: React.FC = () => {
 					<Grid item xs={12}>
 						<hr style={{ marginTop: "3vh", marginBottom: "3vh" }} />
 					</Grid>
-					<TextGrid item xs={12} md={4} {...animatedItem2}>
+					<TextGrid item xs={12} md={4} {...animatedItem7}>
 						<ContentFont style={{ color: "#FEFFFF" }} xl>
 							LOL MATCHER
 						</ContentFont>
@@ -123,7 +190,7 @@ const Projects: React.FC = () => {
 							* 기술 스택: react, javascript, styled-component, recoil, apex-chart
 						</ContentFont>
 					</TextGrid>
-					<ImageGrid item xs={12} md={8} {...animatedItem5}>
+					<ImageGrid item xs={12} md={8} {...animatedItem8}>
 						<div style={{ position: "relative" }}>
 							<a href="https://lol.matcher.games" target="_blank" rel="noopener noreferrer">
 								<Overlay style={{ maxWidth: 678 }}>
@@ -137,7 +204,7 @@ const Projects: React.FC = () => {
 					<Grid item xs={12}>
 						<hr style={{ marginTop: "3vh", marginBottom: "3vh" }} />
 					</Grid>
-					<TextGrid item xs={12} md={4} {...animatedItem3}>
+					<TextGrid item xs={12} md={4} {...animatedItem9}>
 						<ContentFont style={{ color: "#FEFFFF" }} xl>
 							PORTFOLIO
 						</ContentFont>
@@ -151,9 +218,9 @@ const Projects: React.FC = () => {
 							* 기술 스택: react, typescript, nextjs, styled-component
 						</ContentFont>
 					</TextGrid>
-					<ImageGrid item xs={12} md={8} {...animatedItem6}>
+					<ImageGrid item xs={12} md={8} {...animatedItem10}>
 						<div style={{ position: "relative" }}>
-							<a href="https://lol.matcher.games" target="_blank" rel="noopener noreferrer">
+							<a href="https://kyj-portfolio.com" target="_blank" rel="noopener noreferrer">
 								<Overlay>
 									<Image src={portfolio} alt={"portfolio"} />
 									<ContentFont style={{ position: "absolute", top: "30%", left: "40%", color: "white", borderBottomColor:'white',fontSize:"3vmin", margin:".5vmin" }}>PORTFOLIO</ContentFont>
