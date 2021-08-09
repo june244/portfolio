@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
-import { Topbar } from "../components";
-import { About, Skills, Projects, Contact } from "../views";
+import { Main,About, Skills, Projects, Contact } from "../views";
 
 const scrollToRef = ref => window.scrollTo({ top: ref.current.offsetTop - 64, behavior: "smooth" });
 
@@ -22,7 +21,7 @@ const Index: React.FC = () => {
 
 	return (
 		<>
-			<Topbar scrollTo={scrollTo} />
+			<Main scrollTo={scrollTo} />
 			<div ref={aboutRef}>
 				<About />
 			</div>

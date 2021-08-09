@@ -2,7 +2,7 @@ import React from "react";
 import { AppBar, Toolbar, Container } from "@material-ui/core";
 import styled from "styled-components";
 import useScroll from "../../lib/hooks/useScroll";
-import ContentFont from "../ContentFont";
+import ContentFont from "../../components/ContentFont";
 
 const TopbarWrapper = styled.div`
   background-image: url("/assets/main/main-bg.jpg");
@@ -46,7 +46,7 @@ const TitleWrapper = styled.div`
 
   & > div.text-top {
     border-bottom: 1vmin solid white;
-    animation: typing 1.5s steps(40, end);
+    animation: typing .5s steps(40, end);
     top: 0;
   }
 
@@ -106,11 +106,11 @@ type scroll = {
 	skills: Function;
 }
 
-type TopbarProps = {
+type MainProps = {
 	scrollTo: scroll;
 }
 
-const Topbar: React.FC<TopbarProps> = (props) => {
+const Main: React.FC<MainProps> = (props) => {
 
 	const { scrollTo: { toTop, about, contact, projects, skills } } = props;
 
@@ -161,7 +161,7 @@ const Topbar: React.FC<TopbarProps> = (props) => {
 	);
 };
 
-export default Topbar;
+export default Main;
 
 
 

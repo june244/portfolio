@@ -1,3 +1,4 @@
+export { default as Main} from './main';
 export {default as About} from './abount';
 export {default as Skills} from './skills';
 export {default as Projects} from './projects';
