@@ -241,9 +241,14 @@ const Projects: React.FC = () => {
 						<ContentFont style={{ color: "#FEFFFF" }} xl>
 							NBA Analysis
 						</ContentFont>
-						<ContentFont style={{ color: "#17252a" }} lg>
-							농구 통계 정보 분석 사이트
-						</ContentFont>
+						<ul style={{listStyle:'none'}}>
+							<li>
+								<ContentFont style={{ color: "#17252a" }} lg>
+									농구 통계 정보 분석 사이트
+								</ContentFont>
+							</li>
+						</ul>
+
 						<ul>
 							<li>
 								<ContentFont style={{ color: "#17252a" }} md>
